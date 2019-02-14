@@ -8,7 +8,7 @@ RawAnswers = "10,8,6,9,10,8,10,7,10,9,10,10,8,10,0,5,9,10,9,7,7,10,9,10,2,8,10,9
 Answers = RawAnswers.split(",")
 
 # Checks if any list answers are invalid
-def 'validateAnswers'(answers):
+def validateAnswers(answers):
 
 	for a in answers:
 
@@ -76,6 +76,7 @@ else:
 	print("\n|--------------|")
 	print("|  PYTHON NPS  |")
 	print("|--------------|\n")
+	print("Total answers: {}\n".format(TotalAnswers))
 	print("Detractors: {} ({}%)".format(TotalDetractors, round(PercentDetractors, 2)))
 	print("Passives: {} ({}%)".format(TotalPassives, round(PercentPassives, 2)))
 	print("Promoters: {} ({}%)\n".format(TotalPromoters, round(PercentPromoters, 2)))
