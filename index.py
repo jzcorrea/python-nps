@@ -8,7 +8,7 @@ RawAnswers = "10,8,6,9,10,8,10,7,10,9,10,10,8,10,0,5,9,10,9,7,7,10,9,10,2,8,10,9
 Answers = RawAnswers.split(",")
 
 # Checks if any list answers are invalid
-def validateAnswers(answers):
+def 'validateAnswers'(answers):
 
 	for a in answers:
 
@@ -34,7 +34,7 @@ def filterTotalAnswers(answers, min, max):
 
 	return len(list(filter(lambda answer: checkAnswer(answer, min, max), answers)))
 
-# Ger percent value
+# Get percent value
 def getPercent(value, total):
 
 	return (value / total) * 100
